@@ -1,9 +1,9 @@
 <section class="container">
-  <form action="" class="formulario" (ngSubmit)="transferir()">
+  <form action="" class="formulario" (ngSubmit)="transferir()">  <!-- ngSubmitt executa alguma coisa após o formulário ser submitado -->
     <h2 class="formulario__titulo">Nova Tranferência</h2>
     <div class="form-field">
-      <label class="form-field__label" for="valor" >Valor:</label>
-      <input class="form-field__input" type="text" id="valor" [(ngModel)]="valor" name="valor">
+      <label class="form-field__label" for="valor" >Valor:</label>  <!--Dessa forma [()] eu posso tanto receber quanto enviar valor para o component-->
+      <input class="form-field__input" type="number" id="valor" [(ngModel)]="valor" name="valor"> <!--ngModel envia o valor do campo para onde o ngSubmit chamar a função-->
     </div>
     <div class="form-field">
       <label class="form-field__label" for="destino"  >Destino:</label>
