@@ -29,7 +29,9 @@
       }
     }
   }
-
+  &__vazia {
+    margin-left : 8em;
+  }
   &__conteudo {
     padding: 10px;
     border-bottom: 1px solid var(--cinza-claro);
